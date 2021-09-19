@@ -13,12 +13,16 @@ or
 - Open the [file](https://github.com/mdperez/PvU-plus/raw/main/PvU%20Ratio.user.js) and Tampermonkey will ask you to install it.
 
 ## How to use it
-- Go to the [marketplace](https://marketplace.plantvsundead.com/offering/bundle#/marketplace/plant).
-- A new menu will appear at the bottom of the page with the following options:
--- Filter: Draw the LE/Hour ratio and the ROI for every plant on the current page. It also paint a border around the plant based on the current ratio (Red < 6, Orange < 8, Yellow < 10, and Green >= 10) and puts a green background in the plant with the less ROI.
--- Clear: Revert all the changes done by the filter button.
--- Prev & Next: Navigates between pages on the marketplace and automatically clears the filter.
--- Reload: Recharges the page.
+ - Go to the [marketplace](https://marketplace.plantvsundead.com/offering/bundle#/marketplace/plant).
+ - A new menu will appear at the bottom of the page with the following options:
+
+> **Filter**[q]: Draw the LE/Hour ratio and the ROI for every plant on the    current page. It also paint a border around the plant based on the   
+> current ratio (Red < 6, Orange < 8, Yellow < 10, and Green >= 10) and 
+> puts a green background in the plant with the less ROI.
+> 
+> **Clear**[w]: Revert all the changes done by the filter button.
+> **Prev**[e] & **Next**[r]: Navigates between pages on the marketplace and automatically clears the filter.
+> **Reload**[t]: Recharges the page.
 
 ## Donations
 if you find this extension useful you can thank me on the following wallet BSC (BEP-20):
