@@ -21,7 +21,9 @@ or
 > puts a green background in the plant with the less ROI.
 > 
 > **Clear**[w]: Revert all the changes done by the filter button.
+> 
 > **Prev**[e] & **Next**[r]: Navigates between pages on the marketplace and automatically clears the filter.
+> 
 > **Reload**[t]: Recharges the page.
 
 ## Donations
