@@ -3,8 +3,14 @@ PvU Plus is a Tampermonkey extension that enhances some PvU funcionalities.
 
 ## Installation
 - Install [Tampermonkey](https://www.tampermonkey.net/) extension on your browser (if u don't have it).
+
+
 - Go to the Utilities section inside your Tampermonkey dashboard.
 - Import the extension as a file and install it.
+
+or
+
+- Open the [file](https://github.com/mdperez/PvU-plus/raw/main/PvU%20Ratio.user.js) and Tampermonkey will ask you to install it.
 
 ## How to use it
 - Go to the [marketplace](https://marketplace.plantvsundead.com/offering/bundle#/marketplace/plant).
