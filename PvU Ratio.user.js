@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         PvU Plus
-// @version      1.3
+// @version      1.3.1
 // @updateURL    https://github.com/mdperez/PvU-plus/raw/main/PvU%20Ratio.user.js
 // @downloadURL  https://github.com/mdperez/PvU-plus/raw/main/PvU%20Ratio.user.js
 // @description  Recover the LE per Hour value of the visible plants and days for ROI
@@ -117,8 +117,8 @@
         const menuContent = `
 	  \<div class='wrapper' style='display: flex; width: 100%; height: 100%; justify-content: center; align-items: center; color: #FFF; flex-direction: column; margin-top: 25px; padding-top: 25px; border-top: 1px solid #11131b;'>
 		<div>
-            <button id='filterBtn'class="btn-confirm" data-v-32e52768 style='margin: 0 0.2vw; padding: 0.2vw 1vw;'>Filter</button>
-		    <button id='clearBtn' class="btn-close" data-v-32e52768 style='margin: 0 0.2vw; padding: 0.2vw 1vw;'>Clear</button>
+            <button id='filterBtn'class="btn-confirm" data-v-32e52768 style='margin: 0 0.2vw;'>Filter</button>
+		    <button id='clearBtn' class="btn-close" data-v-32e52768 style='margin: 0 0.2vw;'>Clear</button>
         </div>
 		<button id='reloadBtn' class="btn-confirm" data-v-32e52768 style='margin: 1vw'>Reload</button>
         <div>
