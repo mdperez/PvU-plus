@@ -19,3 +19,7 @@ or
 -- Clear: Revert all the changes done by the filter button.
 -- Prev & Next: Navigates between pages on the marketplace and automatically clears the filter.
 -- Reload: Recharges the page.
+
+## Donations
+if you find this extension useful you can thank me on the following wallet BSC (BEP-20):
+0x773e9bC857434f9AD4fc2A17ADe9fa63bf3Af229
