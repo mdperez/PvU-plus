@@ -125,15 +125,28 @@
         document.querySelector("body").append(menu);
     }
 
-    //document.onkeypress = (e) => {
-    //    e = e || window.event;
-    //    if (e.key === "1") {
-    //        init();
-    //    }
-    //    if (e.key === "2") {
-    //        reload();
-    //    }
-    //};
+    document.onkeypress = (e) => {
+        e = e || window.event;
+        switch (e.key) {
+            case ("q"):
+                init();
+                break;
+            case ("w"):
+                clear();
+                break;
+            case ("e"):
+                clear();
+                document.querySelector("[data-v-4fcc5f08]").children[0].click();
+                break;
+            case ("r"):
+                clear();
+                document.querySelector("[data-v-4fcc5f08]").children[4].click();
+                break;
+            case ("t"):
+                reload();
+                break;
+        }
+    };
 
 
     drawMenu();
