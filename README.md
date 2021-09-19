@@ -14,7 +14,7 @@ or
 
 ## How to use it
  - Go to the [marketplace](https://marketplace.plantvsundead.com/offering/bundle#/marketplace/plant).
- - A new menu will appear at the bottom of the page with the following options:
+ - A new menu will appear at the bottom of the right panel with the following options:
 
 > **Filter**[q]: Draw the LE/Hour ratio and the ROI for every plant on the    current page. It also paint a border around the plant based on the   
 > current ratio (Red < 6, Orange < 8, Yellow < 10, and Green >= 10) and 
