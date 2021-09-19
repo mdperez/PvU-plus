@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         PvU Plus
-// @version      1.2
+// @version      1.3
 // @updateURL    https://github.com/mdperez/PvU-plus/raw/main/PvU%20Ratio.user.js
 // @downloadURL  https://github.com/mdperez/PvU-plus/raw/main/PvU%20Ratio.user.js
 // @description  Recover the LE per Hour value of the visible plants and days for ROI
@@ -112,19 +112,23 @@
 
     const drawMenu = () => {
         let menu = document.createElement("div");
-        menu.style.cssText = "position: fixed; bottom: 0; left: 0; width: 100vw; height: 50px; background: #238636;";
+        // menu.style.cssText = "position: fixed; bottom: 0; left: 0; width: 100vw; height: 50px; background: #238636;";
         menu.classList.add("pvuPlus");
         const menuContent = `
-	  \<div class='wrapper' style='display: flex; width: 100%; height: 100%; justify-content: center; align-items: center; color: #FFF;'>
-		<span id='filterBtn' style='margin: 0 1vw'>Filter</span>
-		<span id='clearBtn' style='margin: 0 1vw'>Clear</span>
-		<span id='prevBtn' style='margin: 0 1vw'>< Prev</span>
-		<span id='nextBtn' style='margin: 0 1vw'>Next ></span>
-		<span id='reloadBtn' style='margin: 0 1vw'>Reload</span>
+	  \<div class='wrapper' style='display: flex; width: 100%; height: 100%; justify-content: center; align-items: center; color: #FFF; flex-direction: column; margin-top: 25px; padding-top: 25px; border-top: 1px solid #11131b;'>
+		<div>
+            <button id='filterBtn'class="btn-confirm" data-v-32e52768 style='margin: 0 0.2vw; padding: 0.2vw 1vw;'>Filter</button>
+		    <button id='clearBtn' class="btn-close" data-v-32e52768 style='margin: 0 0.2vw; padding: 0.2vw 1vw;'>Clear</button>
+        </div>
+		<button id='reloadBtn' class="btn-confirm" data-v-32e52768 style='margin: 1vw'>Reload</button>
+        <div>
+		    <span id='prevBtn' style='margin: 0 1vw; cursor: pointer;'>< Prev</span>
+		    <span id='nextBtn' style='margin: 0 1vw; cursor: pointer;'>Next ></span>
+        </div>
 	  </div>\
 	`;
         menu.innerHTML = menuContent;
-        document.querySelector("body").append(menu);
+        document.querySelector("[data-v-7011ddac]") && document.querySelector("[data-v-7011ddac]").append(menu);
     }
 
     document.onkeypress = (e) => {
@@ -150,28 +154,29 @@
         }
     };
 
+    setTimeout(() => {
+        drawMenu();
+        document.querySelector("#filterBtn").addEventListener("click", e => {
+            init();
+        });
 
-    drawMenu();
+        document.querySelector("#clearBtn").addEventListener("click", e => {
+            clear();
+        });
 
-    document.querySelector("#filterBtn").addEventListener("click", e => {
-        init();
-    });
+        document.querySelector("#prevBtn").addEventListener("click", e => {
+            clear();
+            document.querySelector("[data-v-4fcc5f08]").children[0].click();
+        });
 
-    document.querySelector("#clearBtn").addEventListener("click", e => {
-        clear();
-    });
+        document.querySelector("#nextBtn").addEventListener("click", e => {
+            clear();
+            document.querySelector("[data-v-4fcc5f08]").children[4].click();
+        });
 
-    document.querySelector("#prevBtn").addEventListener("click", e => {
-        clear();
-        document.querySelector("[data-v-4fcc5f08]").children[0].click();
-    });
+        document.querySelector("#reloadBtn").addEventListener("click", e => {
+            reload();
+        });
+    }, 1000);
 
-    document.querySelector("#nextBtn").addEventListener("click", e => {
-        clear();
-        document.querySelector("[data-v-4fcc5f08]").children[4].click();
-    });
-
-    document.querySelector("#reloadBtn").addEventListener("click", e => {
-       reload();
-    });
 })();
