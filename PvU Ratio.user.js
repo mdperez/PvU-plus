@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         PvU Plus
-// @version      1.0
+// @version      1.1
 // @description  Recover the LE per Hour value of the visible plants and days for ROI
 // @author       mdperez
 // @match        https://marketplace.plantvsundead.com/offering/bundle
