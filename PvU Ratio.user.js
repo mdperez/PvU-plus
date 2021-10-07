@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         PvU Plus
-// @version      1.3.1
+// @version      1.4
 // @updateURL    https://github.com/mdperez/PvU-plus/raw/main/PvU%20Ratio.user.js
 // @downloadURL  https://github.com/mdperez/PvU-plus/raw/main/PvU%20Ratio.user.js
 // @description  Recover the LE per Hour value of the visible plants and days for ROI
