@@ -128,7 +128,7 @@
 	  </div>\
 	`;
         menu.innerHTML = menuContent;
-        document.querySelector("[data-v-7011ddac]") && document.querySelector("[data-v-7011ddac]").append(menu);
+        document.querySelector("[data-v-f4881794]") && document.querySelector("[data-v-f4881794]").append(menu);
     }
 
     document.onkeypress = (e) => {
